@@ -42,7 +42,7 @@ const Index = () => {
 
         <Input label='Nome: ' type='text' placeholder={'Digite seu nome'} onChange={(e)=>{setName(e.target.value)}} value={name}/>
 
-        <Button onClick={iniciarQuiz} disabled={name.length < 3} className='bg-roxo-100 hover:bg-roxo-200 border-2 border-purple-900 disabled:opacity-50 disabled:cursor-not-allowed'>INICIAR QUIZ</Button>
+        <Button onClick={iniciarQuiz} disabled={name.length < 3} className='bg-roxo-100 hover:bg-roxo-200 border-2 border-purple-900 disabled:opacity-50 disabled:cursor-not-allowed text-xl'>INICIAR QUIZ</Button>
 
 
         <a className='underline text-xl cursor-pointer' onClick={toggleModal}>Como funciona</a>

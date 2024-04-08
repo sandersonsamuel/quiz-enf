@@ -47,7 +47,7 @@ export const Alternativas = () =>{
         <>
             <div className={'flex flex-col w-full mt-3 gap-3'}>
                 {snapSection.sections[snapSection.current].questoes[snapQuestion.current].respostas.map((alternativa, key) => (
-                    <Button disabled={btnDisabled} onClick={()=> showResult(key)} key={key} className={classNames('text-sm', show && key == altCorreta ? 'bg-green-600 border-green-900' : show && key != altCorreta ? 'bg-red-500 border-red-900' : '')}>
+                    <Button disabled={btnDisabled} color={show && key == altCorreta ? 'verde' : show && key != altCorreta ? 'vermelho' : 'roxo'} onClick={()=> showResult(key)} key={key} className={'text-sm'}>
                         {alternativa}
                     </Button>
                 ))}
