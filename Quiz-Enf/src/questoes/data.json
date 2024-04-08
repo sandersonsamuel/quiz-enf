@@ -1,0 +1,297 @@
+{
+  "tema": "Anamnese e Métodos Propedêuticos",
+  "secoes": [
+    {
+      "nome": "Inspeção",
+      "questoes": [
+        {
+          "pergunta": "Dentre as alternativas, o que pode ser avaliado no paciente durante a inspeção no exame físico?",
+          "respostas": [
+            "Textura da pele",
+            "Temperatura corporal",
+            "Reflexos e movimento"
+          ],
+          "correta": 2
+        },
+        {
+          "pergunta": "Durante a inspeção da pele, o que pode indicar icterícia?",
+          "respostas": [
+            "Coloração azulada da pele",
+            "Coloração amarelada da pele",
+            "Coloração vermelha da pele"
+          ],
+          "correta": 1
+        },
+        {
+          "pergunta": "Qual das seguintes condições é identificada durante a inspeção da boca?",
+          "respostas": [
+            "Hiperemia da mucosa",
+            "Cianose dos lábios",
+            "Hipotensão arterial"
+          ],
+          "correta": 1
+        },
+        {
+          "pergunta": "O que é avaliado durante a inspeção das unhas?",
+          "respostas": [
+            "Textura da pele",
+            "Presença de edema",
+            "Forma e coloração"
+          ],
+          "correta": 2
+        },
+        {
+          "pergunta": "Durante a inspeção das extremidades, qual achado pode indicar má perfusão periférica?",
+          "respostas": [
+            "Pele quente e seca",
+            "Edema localizado",
+            "Cianose das extremidades"
+          ],
+          "correta": 2
+        },
+        {
+          "pergunta": "O que pode ser observado durante a inspeção da postura do paciente?",
+          "respostas": [
+            "Batimento cardíaco",
+            "Dificuldade de movimentação",
+            "Coloração da pele"
+          ],
+          "correta": 1
+        }
+      ]
+    },
+    {
+      "nome": "Palpação",
+      "questoes": [
+        {
+          "pergunta": "Qual dos seguintes tipos de palpação é utilizada para avaliar a consistência e textura dos tecidos superficiais?",
+          "respostas": ["Superficial", "Profunda", "Bimanual", "Flutuação"],
+          "correta": 0
+        },
+        {
+          "pergunta": "Qual técnica de palpação é comumente utilizada para avaliar a presença de nódulos ou massas nos tecidos moles?",
+          "respostas": ["Percussão", "Superficial", "Flutuação", "Profunda"],
+          "correta": 1
+        },
+        {
+          "pergunta": "Em qual tipo de palpação o examinador utiliza ambas as mãos para sentir uma estrutura entre elas?",
+          "respostas": ["Bimanual", "Superficial", "Percussão", "Flutuação"],
+          "correta": 0
+        },
+        {
+          "pergunta": "Qual técnica de palpação é frequentemente usada para avaliar a presença de líquido livre na cavidade abdominal?",
+          "respostas": [
+            "Palpação superficial",
+            "Palpação profunda",
+            "Flutuação",
+            "Percussão"
+          ],
+          "correta": 2
+        },
+        {
+          "pergunta": "Qual tipo de palpação é usada para avaliar a sensibilidade e presença de dor em determinada região do corpo?",
+          "respostas": ["Superficial", "Profunda", "Bimanual", "Percussão"],
+          "correta": 0
+        },
+        {
+          "pergunta": "Quais são os principais métodos de avaliação do sistema respiratório?",
+          "respostas": [
+            "Ausculta e palpação",
+            "Percussão e exames de imagem",
+            "Testes de função pulmonar"
+          ],
+          "correta": 0
+        },
+        {
+          "pergunta": "Como é feito exame físico do sistema renal?",
+          "respostas": [
+            "Ausculta dos rins",
+            "Palpação da bexiga",
+            "Análise da urina"
+          ],
+          "correta": 1
+        }
+      ]
+    },
+    {
+      "nome": "Percussão",
+      "questoes": [
+        {
+          "pergunta": "Qual é a técnica correta para a percussão durante o exame físico?",
+          "respostas": [
+            "Pressão direta sobre o órgão",
+            "Batidas suaves com os dedos",
+            "Vibrações profundas com o estetoscópio"
+          ],
+          "correta": 1
+        },
+        {
+          "pergunta": "Durante a percussão abdominal, o som timpânico é esperado sobre qual estrutura?",
+          "respostas": ["Fígado", "Estômago", "Intestino"],
+          "correta": 0
+        },
+        {
+          "pergunta": "Qual é o som esperado durante a percussão sobre uma área pulmonar normal?",
+          "respostas": [
+            "Som maciço",
+            "Som timpânico",
+            "Som claro e ressonante"
+          ],
+          "correta": 2
+        },
+        {
+          "pergunta": "O que a percussão sobre um órgão sólido, como o fígado, produzirá?",
+          "respostas": ["Som timpânico", "Som maciço", "Som ressonante"],
+          "correta": 1
+        },
+        {
+          "pergunta": "Qual é o som típico esperado durante a percussão sobre o músculo?",
+          "respostas": ["Som maciço", "Som timpânico", "Som ressonante"],
+          "correta": 0
+        },
+        {
+          "pergunta": "Durante a percussão do tórax, o que o som timpânico indica?",
+          "respostas": [
+            "Presença de líquido no pulmão",
+            "Ausência de ar",
+            "Presença de ar"
+          ],
+          "correta": 2
+        }
+      ]
+    },
+    {
+      "nome": "Ausculta",
+      "questoes": [
+        {
+          "pergunta": "Qual dos cinco sentidos é utilizado na ausculta?",
+          "respostas": ["Tato", "Olfato", "Audição", "Visão"],
+          "correta": 2
+        },
+        {
+          "pergunta": "Qual a finalidade da ausculta?",
+          "respostas": [
+            "Buscar por ruídos considerados normais ou patológicos",
+            "Buscar por abaulamentos usando o tato",
+            "Auscultar órgãos anormais",
+            "Visualizar músculos e ossos"
+          ],
+          "correta": 0
+        },
+        {
+          "pergunta": "São sons anormais detectados na ausculta pulmonar, exceto:",
+          "respostas": [
+            "Broncovesicular",
+            "Sibilo",
+            "Estertores",
+            "Atrito pleural"
+          ],
+          "correta": 0
+        },
+        {
+          "pergunta": "Qual é a posição corporal mais comum para realizar a ausculta cardíaca?",
+          "respostas": ["Deitado ou sentado", "De bruço", "Em pé"],
+          "correta": 0
+        },
+        {
+          "pergunta": "Qual equipamento é comumente utilizado para realizar a ausculta?",
+          "respostas": ["Estetoscópio", "Esfigmomanômetro", "Otoscópio"],
+          "correta": 0
+        },
+        {
+          "pergunta": "Qual é a frequência respiratória normal de um adulto em repouso?",
+          "respostas": [
+            "12-20 respirações por minuto",
+            "30-40 respirações por minuto",
+            "50-60 respirações por minuto"
+          ],
+          "correta": 0
+        },
+        {
+          "pergunta": "O que significa se você ouvir um som crepitante durante a ausculta pulmonar?",
+          "respostas": [
+            "Presença de líquido nos pulmões",
+            "Presença de ar nos pulmões",
+            "Contração muscular",
+            "Presença de tecido fibroso nos pulmões"
+          ],
+          "correta": 0
+        }
+      ]
+    },
+    {
+      "nome": "Anamnese",
+      "questoes": [
+        {
+          "pergunta": "O que é anamnese?",
+          "respostas": [
+            "Exame físico completo",
+            "Entrevista inicial com o paciente para coletar informações médicas",
+            "É um procedimento cirúrgico",
+            "Análise de exames laboratoriais"
+          ],
+          "correta": 1
+        },
+        {
+          "pergunta": "Qual é o objetivo principal da anamnese?",
+          "respostas": [
+            "Avaliar a pressão arterial",
+            "Coletar informações clínicas e histórico do paciente",
+            "Realizar procedimentos invasivos",
+            "Prescrever medicação"
+          ],
+          "correta": 1
+        },
+        {
+          "pergunta": "Durante a anamnese, que tipo de informações são geralmente coletadas?",
+          "respostas": [
+            "Apenas informações demográficas",
+            "Histórico familiar e hábitos de vida do paciente",
+            "Apenas sintomas atuais do paciente",
+            "Resultados de exames anteriores"
+          ],
+          "correta": 1
+        },
+        {
+          "pergunta": "Quais aspectos são abordados na anamnese psicológica?",
+          "respostas": [
+            "Apenas sintomas físicos",
+            "Histórico de doenças crônicas",
+            "Aspectos emocionais, comportamentais e cognitivos do paciente",
+            "Apenas hábitos alimentares"
+          ],
+          "correta": 2
+        },
+        {
+          "pergunta": "Qual é a importância da anamnese para o diagnóstico médico?",
+          "respostas": [
+            "Não tem relevância para o diagnóstico",
+            "Auxilia na compreensão dos sintomas e na identificação de possíveis causas das condições do paciente",
+            "Substitui a necessidade de exames complementares"
+          ],
+          "correta": 1
+        },
+        {
+          "pergunta": "Quais são as etapas básicas para realizar uma anamnese eficaz?",
+          "respostas": [
+            "Exame físico e prescrição de medicamentos",
+            "Coleta de dados, escuta ativa e registro das informações",
+            "Realização de procedimentos cirúrgicos",
+            "Solicitar exames complementares sem questionar o paciente"
+          ],
+          "correta": 1
+        },
+        {
+          "pergunta": "Por que é importante realizar uma anamnese completa e detalhada?",
+          "respostas": [
+            "Para economizar tempo",
+            "Para estabelecer um diagnóstico preciso",
+            "Para evitar o contato com o paciente",
+            "Para prescrever medicamentos rapidamente"
+          ],
+          "correta": 1
+        }
+      ]
+    }
+  ]
+}
