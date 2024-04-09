@@ -6,6 +6,7 @@ import classNames from "classnames";
 import {useSnapshot} from "valtio";
 import {useEffect} from "react";
 import congrats from '../../assets/soundEffects/Congrats.wav'
+import wrongSound from "../../assets/soundEffects/Wrong.wav";
 
 export const Resultado = () => {
 
@@ -15,7 +16,9 @@ export const Resultado = () => {
 
     useEffect(() => {
         if (snapShow.value){
-            new Audio(congrats).play()
+            let audio = new Audio(congrats)
+            audio.volume = 0.5
+            audio.play()
         }
     }, [snapShow]);
 

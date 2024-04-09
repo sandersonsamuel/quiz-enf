@@ -4,8 +4,7 @@ import {alternativas, question, score, section, showResult, timer} from "../../p
 import {resetAndNext} from "../../proxyState/index.js";
 import {useEffect, useState} from "react";
 import correctSound from '../../assets/soundEffects/Correct.wav'
-import WrongSound from '../../assets/soundEffects/Wrong.wav'
-
+import wrongSound from '../../assets/soundEffects/Wrong.wav'
 
 export const Alternativas = () =>{
 
@@ -26,11 +25,15 @@ export const Alternativas = () =>{
         if (key === altCorreta){
             score.value += 20 - snapTimer.value/3
             alternativas.corretas += 1
-            new Audio(correctSound).play()
+            let audio = new Audio(correctSound)
+            audio.volume = 0.5
+            audio.play()
         }
 
         if (key !== altCorreta){
-            new Audio(WrongSound).play()
+            let audio = new Audio(wrongSound)
+            audio.volume = 0.5
+            audio.play()
         }
 
         timer.stop = true
