@@ -4,13 +4,20 @@ import Button from "../button/index.jsx";
 import {Link} from "react-router-dom";
 import classNames from "classnames";
 import {useSnapshot} from "valtio";
+import {useEffect} from "react";
+import congrats from '../../assets/soundEffects/Congrats.wav'
 
-
-export const Resultado = ({}) => {
+export const Resultado = () => {
 
     const maxScore = localStorage.getItem('maxScore')
     const snapName = useSnapshot(userName)
     const snapShow = useSnapshot(showResult)
+
+    useEffect(() => {
+        if (snapShow.value){
+            new Audio(congrats).play()
+        }
+    }, [snapShow]);
 
     return(
         <>
