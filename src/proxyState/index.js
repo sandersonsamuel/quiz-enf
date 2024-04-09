@@ -45,7 +45,6 @@ export const resetVariables = () =>{
 }
 
 export const finishQuiz = () =>{
-
   resetVariables()
 }
 

@@ -4,7 +4,7 @@ import Modal from '../../components/modal'
 
 import { useNavigate } from 'react-router-dom'
 import { useSnapshot } from 'valtio'
-import { userName } from '../../proxyState/index'
+import {resetVariables, userName} from '../../proxyState/index'
 import {useState} from "react";
 
 const Index = () => {
@@ -12,6 +12,8 @@ const Index = () => {
   const [isOpen, setIsOpen] = useState(false)
   const [name, setName] = useState('')
   const snap = useSnapshot(userName)
+
+  resetVariables()
 
   const navigate = useNavigate()
 
@@ -48,7 +50,6 @@ const Index = () => {
             <Button onClick={iniciarQuiz} disabled={name.length < 3}
                     className='bg-roxo-100 hover:bg-roxo-200 border-2 border-purple-900 disabled:opacity-50 disabled:cursor-not-allowed text-xl'>INICIAR
               QUIZ</Button>
-
 
             <a className='underline text-xl cursor-pointer' onClick={toggleModal}>Como funciona</a>
 
