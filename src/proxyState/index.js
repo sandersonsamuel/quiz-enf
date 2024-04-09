@@ -1,7 +1,7 @@
 import { proxy } from "valtio";
 import Json from '../questoes/data.json'
 
-export let userName = proxy({
+export const userName = proxy({
   value: ''
 })
 
@@ -57,18 +57,23 @@ export const finishQuiz = () =>{
   timer.stop = true
 }
 
-export const resetAndNext = () =>{
-  if (question.currentTotal < alternativas.total - 1){
-    if (question.current === section.sections[section.current].questoes.length - 1) {
-      question.current = 0
-      section.current += 1
-      question.currentTotal += 1
-    }else {
-      question.current += 1
-      question.currentTotal += 1
-      timer.value = 0
+export const resetAndNext = () => {
+  if (question.currentTotal < alternativas.total - 1) {
+    const currentSection = section.sections[section.current];
+    const isLastQuestionInSection = question.current === currentSection.questoes.length - 1;
+
+    if (isLastQuestionInSection) {
+      // Avança para a próxima seção se for a última pergunta da seção
+      section.current += 1;
+      question.current = 0;
+    } else {
+      // Avança para a próxima pergunta na mesma seção
+      question.current += 1;
     }
-  }else{
-    finishQuiz()
+
+    question.currentTotal += 1;
+    timer.value = 0;
+  } else {
+    finishQuiz();
   }
-}
+};

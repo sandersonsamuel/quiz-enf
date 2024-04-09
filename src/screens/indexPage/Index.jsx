@@ -31,7 +31,7 @@ const Index = () => {
 
   const contentModal =
   <>
-    <b>Bem-vindo ao Quiz sobre Anamnese e Métodos Propedêuticos! &nbsp;</b>
+    <b>Bem-vindo ao Quiz sobre Anamnese e Métodos Propedêuticos!&nbsp;</b>
     Prepare-se para testar seus conhecimentos sobre a avaliação física e histórico do paciente. Cada pergunta tem um limite de 30 segundos. Os tópicos incluem Inspeção, Palpação, Percussão, Ausculta e Anamnese. No final, sua pontuação revelará seu desempenho. Boa sorte!
   </>
 
@@ -41,8 +41,10 @@ const Index = () => {
 
           <div className='flex flex-col gap-5'>
 
-            <p className='text-4xl font-semibold tracking-tight max-w-full'>Métodos propedêuticos e Anamnese</p>
-            <p className='text-2xl font-light'>Seja bem-vindo ao quiz, acadêmico de Enfermagem! Vamos começar?!</p>
+            <p className='text-4xl font-semibold tracking-tight max-w-full'>Aventura Propedêutica</p>
+            <p className='text-2xl font-light text-justify'>Olá, acadêmico(a) de enfermagem!
+              Seja bem-vindo(a) ao nosso quiz de métodos propedêuticos e anamnese!
+              Prepare-se, pois a aventura está prestes a começar! Vamos lá?!</p>
 
             <Input label='Nome: ' type='text' placeholder={'Digite seu nome'} onChange={(e) => {
               setName(e.target.value)

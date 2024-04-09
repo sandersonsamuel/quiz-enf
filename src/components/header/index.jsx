@@ -14,7 +14,7 @@ export const Header = () =>{
                 <div className={'flex flex-col items-center justify-evenly gap-2'}>
 
                     <p className={'text-4xl font-bold text-center'}>
-                        {section.sections[snapSection.current].nome}
+                        {snapSection.sections[snapSection.current].nome}
                     </p>
 
                     <p className={'font-bold text-xl'}>
