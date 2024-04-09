@@ -10,7 +10,7 @@ export const userName = proxy({
 })
 
 export const section = proxy({
-  current: 0,
+  current: 1,
   sections: Json.secoes
 })
 

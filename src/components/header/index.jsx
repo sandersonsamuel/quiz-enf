@@ -22,9 +22,7 @@ export const Header = () =>{
                     </p>
                 </div>
 
-                <div className={''}>
-                    <TimeBar/>
-                </div>
+                <TimeBar/>
 
             </div>
 

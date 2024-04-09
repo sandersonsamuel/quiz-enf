@@ -6,7 +6,7 @@ const QuizPage = () => {
 
   return (
       <div className={'sm:flex sm:flex-col sm:items-center'}>
-          <div className={'flex flex-col h-screen gap-5 max-w-[800px]'}>
+          <div className={'flex flex-col gap-5 max-w-[800px]'}>
               <Header/>
               <QuizContent/>
               <Resultado/>

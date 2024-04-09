@@ -7,11 +7,9 @@ export const  QuizContent = () =>{
     const snapSection = useSnapshot(section)
     const snapQuestion = useSnapshot(question)
 
-    console.log(snapSection.sections)
-
     return (
         <>
-            <div className={'bg-slate-800 w-full rounded-xl p-5 flex flex-col items-center gap-2'}>
+            <div className={'bg-slate-800 w-full rounded-xl p-5 flex flex-col items-center gap-2 mb-5'}>
 
                 <p className={'text-white font-medium'}>
                     Questão {snapQuestion.currentTotal + 1}/{alternativas.total}
