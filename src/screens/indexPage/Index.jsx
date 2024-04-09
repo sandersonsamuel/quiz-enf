@@ -21,7 +21,7 @@ const Index = () => {
 
   const iniciarQuiz = () =>{
     if (name.length > 3){
-      userName.name = name
+      userName.value = name
     }
     navigate('/quiz')
   }
@@ -33,25 +33,32 @@ const Index = () => {
   </>
 
   return (
-    <div className='text-white w-full h-full flex flex-col justify-center'>
+      <div className={'flex flex-col h-full w-full justify-center items-center'}>
+        <div className='text-white w-full h-full flex flex-col justify-center sm:max-w-[800px]'>
 
-      <div className='flex flex-col gap-5'>
+          <div className='flex flex-col gap-5'>
 
-        <p className='text-4xl font-semibold tracking-tight max-w-full'>Métodos propedêuticos e Anamnese</p>
-        <p className='text-2xl font-light'>Seja bem-vindo ao quiz, acadêmico de Enfermagem! Vamos começar?!</p>
+            <p className='text-4xl font-semibold tracking-tight max-w-full'>Métodos propedêuticos e Anamnese</p>
+            <p className='text-2xl font-light'>Seja bem-vindo ao quiz, acadêmico de Enfermagem! Vamos começar?!</p>
 
-        <Input label='Nome: ' type='text' placeholder={'Digite seu nome'} onChange={(e)=>{setName(e.target.value)}} value={name}/>
+            <Input label='Nome: ' type='text' placeholder={'Digite seu nome'} onChange={(e) => {
+              setName(e.target.value)
+            }} value={name}/>
 
-        <Button onClick={iniciarQuiz} disabled={name.length < 3} className='bg-roxo-100 hover:bg-roxo-200 border-2 border-purple-900 disabled:opacity-50 disabled:cursor-not-allowed text-xl'>INICIAR QUIZ</Button>
+            <Button onClick={iniciarQuiz} disabled={name.length < 3}
+                    className='bg-roxo-100 hover:bg-roxo-200 border-2 border-purple-900 disabled:opacity-50 disabled:cursor-not-allowed text-xl'>INICIAR
+              QUIZ</Button>
 
 
-        <a className='underline text-xl cursor-pointer' onClick={toggleModal}>Como funciona</a>
+            <a className='underline text-xl cursor-pointer' onClick={toggleModal}>Como funciona</a>
 
-        <Modal isOpen={isOpen} onClose={toggleModal} title={'Como funciona'} btnLabel={'ENTENDI'} content={contentModal}/>
+            <Modal isOpen={isOpen} onClose={toggleModal} title={'Como funciona'} btnLabel={'ENTENDI'}
+                   content={contentModal}/>
 
+          </div>
+
+        </div>
       </div>
-
-    </div>
   )
 }
 

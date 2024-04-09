@@ -1,15 +1,13 @@
 import Button from "../button/index.jsx";
 import {useSnapshot} from "valtio";
-import {question, score, section, timer} from "../../proxyState/index.js";
+import {alternativas, question, score, section, timer} from "../../proxyState/index.js";
 import {resetAndNext} from "../../proxyState/index.js";
-import classNames from "classnames";
 import {useEffect, useState} from "react";
 
 export const Alternativas = () =>{
 
     const snapSection = useSnapshot(section)
     const snapQuestion = useSnapshot(question)
-    const snapScore = useSnapshot(score)
     const snapTimer = useSnapshot(timer)
 
     const [show, setShow] = useState(false);
@@ -21,8 +19,9 @@ export const Alternativas = () =>{
 
         setBtnDisabled(true)
 
-        if (key == altCorreta){
-            score.value += 40 - snapTimer.value
+        if (key === altCorreta){
+            score.value += 20 - snapTimer.value/3
+            alternativas.corretas += 1
         }
 
         timer.stop = true

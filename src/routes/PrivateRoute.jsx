@@ -7,7 +7,7 @@ const PrivateRoute = ({children}) => {
 
   const snap = useSnapshot(userName)
 
-  return snap.name ? children : <Navigate to={'/'}/>
+  return snap.value ? children : <Navigate to={'/'}/>
 }
 
 export default PrivateRoute

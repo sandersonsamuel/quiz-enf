@@ -6,7 +6,7 @@ export const dataQuiz = proxy({
 })
 
 export const userName = proxy({
-  name: ''
+  value: ''
 })
 
 export const section = proxy({
@@ -29,8 +29,28 @@ export let score = proxy({
   value: 0
 })
 
+export let alternativas = proxy({
+  corretas: 0,
+  total: 33
+})
+
+export const resetVariables = () =>{
+  question.current = 0
+  question.currentTotal = 0
+  section.current = 0
+  timer.value = 0
+  alternativas.corretas = 0
+  score.value = 0
+  userName.value = ''
+}
+
+export const finishQuiz = () =>{
+
+  resetVariables()
+}
+
 export const resetAndNext = () =>{
-  if (question.currentTotal < 28){
+  if (question.currentTotal < alternativas.total - 1){
     if (question.current === section.sections[section.current].questoes.length - 1) {
       question.current = 0
       section.current += 1

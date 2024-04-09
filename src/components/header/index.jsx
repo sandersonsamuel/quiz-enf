@@ -9,16 +9,16 @@ export const Header = () =>{
 
     return (
         <>
-            <div className={'w-full mt-3 text-white'}>
+            <div className={'w-full mt-5 text-white'}>
 
-                <div className={'flex items-center justify-evenly'}>
+                <div className={'flex flex-col items-center justify-evenly gap-2'}>
 
-                    <p className={'text-2xl font-bold text-center my-4'}>
+                    <p className={'text-4xl font-bold text-center'}>
                         {section.sections[snapSection.current].nome}
                     </p>
 
-                    <p className={'font-bold'}>
-                        Score: {snapScore.value}
+                    <p className={'font-bold text-xl'}>
+                        Pontuação: {snapScore.value.toFixed(2)}
                     </p>
                 </div>
 
