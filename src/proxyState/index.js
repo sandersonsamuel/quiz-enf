@@ -1,5 +1,6 @@
 import { proxy } from "valtio";
 import Json from '../questoes/data.json'
+import correctSound from "../assets/soundEffects/Correct.wav";
 
 export const userName = proxy({
   value: ''
@@ -33,6 +34,13 @@ export const alternativas = proxy({
 export const showResult = proxy({
   value: false,
 })
+
+export const correctAnswer = () =>{
+
+  score.value += 20 - timer.value/3
+  alternativas.corretas += 1
+
+}
 
 export const resetVariables = () =>{
   question.current = 0
