@@ -1,16 +1,12 @@
 import { proxy } from "valtio";
 import Json from '../questoes/data.json'
 
-export const dataQuiz = proxy({
-  data: Json
-})
-
-export const userName = proxy({
+export let userName = proxy({
   value: ''
 })
 
 export const section = proxy({
-  current: 1,
+  current: 0,
   sections: Json.secoes
 })
 
@@ -25,13 +21,17 @@ export let timer = proxy({
   maxValue: 20
 })
 
-export let score = proxy({
+export const score = proxy({
   value: 0
 })
 
-export let alternativas = proxy({
+export const alternativas = proxy({
   corretas: 0,
   total: 33
+})
+
+export const showResult = proxy({
+  value: false,
 })
 
 export const resetVariables = () =>{
@@ -42,10 +42,19 @@ export const resetVariables = () =>{
   alternativas.corretas = 0
   score.value = 0
   userName.value = ''
+  showResult.value = false
+}
+
+export const saveScore = () =>{
+  if (Number(localStorage.getItem('maxScore')) < score.value){
+    localStorage.setItem('maxScore', score.value.toFixed(2))
+  }
 }
 
 export const finishQuiz = () =>{
-  resetVariables()
+  saveScore()
+  showResult.value = true
+  timer.stop = true
 }
 
 export const resetAndNext = () =>{
@@ -59,5 +68,7 @@ export const resetAndNext = () =>{
       question.currentTotal += 1
       timer.value = 0
     }
+  }else{
+    finishQuiz()
   }
 }

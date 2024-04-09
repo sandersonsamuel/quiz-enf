@@ -15,6 +15,7 @@ const Index = () => {
 
   resetVariables()
 
+
   const navigate = useNavigate()
 
   const toggleModal = () =>{
