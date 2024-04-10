@@ -13,10 +13,16 @@ export const Header = () =>{
         <>
             <div className={'w-full mt-5 text-white'}>
 
-                <div className={'text-4xl font-bold text-center flex flex-col items-center justify-evenly gap-2'}>
+                <div className={'flex flex-col items-center justify-evenly gap-2'}>
 
-                    <p>Pontuação: {snapScore.value}</p>
+                    <p className={'text-4xl font-bold text-center'}>
+                        {sectionCurrent.nome}
+                    </p>
 
+                    <p className={'font-bold text-xl'}>
+                        {sectionCurrent.nome}
+                        Pontuação: {snapScore.value.toFixed(2)}
+                    </p>
                 </div>
 
                 <TimeBar/>
