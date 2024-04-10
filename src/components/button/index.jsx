@@ -14,6 +14,7 @@ const Button = ({children, disabled, className, onClick, color}) => {
     if (cor == 'vermelho'){
       return 'bg-red-500 border-red-800'
     }
+    
     if(cor == 'rosa'){
       return 'bg-pink-500 border-pink-600'
     }
