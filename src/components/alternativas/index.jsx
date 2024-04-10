@@ -59,6 +59,7 @@ export const Alternativas = () =>{
         }
     }, [snapShowResult.value]);
 
+    console.log(score.value)
 
     return (
         <>
