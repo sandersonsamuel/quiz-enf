@@ -58,9 +58,6 @@ export const Alternativas = () =>{
             setBtnDisabled(true)
         }
     }, [snapShowResult.value]);
-
-    console.log(score.value)
-
     return (
         <>
             <div className={'flex flex-col w-full mt-3 gap-3'}>

@@ -46,7 +46,6 @@ export const resetVariables = () =>{
   section.current = 0
   timer.value = 0
   alternativas.corretas = 0
-  score.value = 0
   userName.value = ''
   showResult.value = false
 }

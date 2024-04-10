@@ -1,5 +1,5 @@
 import trofeu from '../../assets/giphy.gif'
-import {alternativas, score, showResult, userName} from "../../proxyState/index.js";
+import {alternativas, pontuacao, showResult, userName} from "../../proxyState/index.js";
 import Button from "../button/index.jsx";
 import {Link} from "react-router-dom";
 import classNames from "classnames";
@@ -40,11 +40,11 @@ export const Resultado = () => {
                     </p>
 
                     <p className={'text-center'}>
-                        Pontuação: {score.value.toFixed(2)}
+                        Pontuação: {pontuacao.value.toFixed(2)}
                     </p>
 
                     <p className={'text-center'}>
-                        Melhor pontuação: {maxScore ? maxScore : score.value.toFixed(2)}
+                        Melhor pontuação: {maxScore ? maxScore : pontuacao.value.toFixed(2)}
                     </p>
 
                 </div>
