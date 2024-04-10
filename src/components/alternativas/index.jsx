@@ -23,7 +23,8 @@ export const Alternativas = () =>{
         setBtnDisabled(true)
 
         if (key === altCorreta){
-            correctAnswer()
+            score.value += 1
+            alternativas.corretas += 1
             let audio = new Audio(correctSound)
             audio.volume = 0.5
             audio.play()
