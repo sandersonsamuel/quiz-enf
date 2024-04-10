@@ -22,8 +22,8 @@ export const timer = proxy({
   maxValue: 20
 })
 
-export const pontuacao = proxy({
-  value: 0,
+export const score = proxy({
+  value: 0
 })
 
 export const alternativas = proxy({
@@ -36,7 +36,7 @@ export const showResult = proxy({
 })
 
 export const correctAnswer = () =>{
-  pontuacao.value += 20 - timer.value/3
+  score.value += 20 - timer.value/3
   alternativas.corretas += 1
 }
 
@@ -46,6 +46,7 @@ export const resetVariables = () =>{
   section.current = 0
   timer.value = 0
   alternativas.corretas = 0
+  score.value = 0
   userName.value = ''
   showResult.value = false
 }

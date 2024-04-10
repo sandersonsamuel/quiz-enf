@@ -1,11 +1,11 @@
 import {TimeBar} from "../timeBar/index.jsx";
-import {pontuacao, section} from "../../proxyState/index.js";
+import {score, section} from "../../proxyState/index.js";
 import {useSnapshot} from "valtio";
 
 export const Header = () =>{
 
     const snapSection = useSnapshot(section)
-    const snapPontuacao = useSnapshot(pontuacao)
+    const snapScore = useSnapshot(score)
 
     const sectionCurrent = snapSection.sections[snapSection.current]
 
@@ -20,7 +20,7 @@ export const Header = () =>{
                     </p>
 
                     <p className={'font-bold text-xl'}>
-                        Pontuação: {snapPontuacao.value}
+                        Pontuação: {snapScore.value.toFixed(2)}
                     </p>
                 </div>
 
