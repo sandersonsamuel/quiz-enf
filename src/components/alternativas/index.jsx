@@ -1,13 +1,10 @@
 import Button from "../button/index.jsx";
 import {useSnapshot} from "valtio";
-import {question, section, showResult, timer, alternativas} from "../../proxyState/index.js";
+import {alternativas, correctAnswer, question, score, section, showResult, timer} from "../../proxyState/index.js";
 import {resetAndNext} from "../../proxyState/index.js";
 import {useEffect, useState} from "react";
 import correctSound from '../../assets/soundEffects/Correct.wav'
 import wrongSound from '../../assets/soundEffects/Wrong.wav'
-
-import {scoreState} from "../../proxyState/index.js";
-import {useRecoilState} from "recoil";
 
 export const Alternativas = () =>{
 
@@ -21,15 +18,12 @@ export const Alternativas = () =>{
 
     const altCorreta = snapSection.sections[snapSection.current].questoes[snapQuestion.current].correta
 
-    const [score, setScore] = useRecoilState(scoreState)
-
     const showCorrect = (key) =>{
 
         setBtnDisabled(true)
 
         if (key === altCorreta){
-            alternativas.corretas += 1
-            setScore(score + 20 - timer.value/3)
+            correctAnswer()
             let audio = new Audio(correctSound)
             audio.volume = 0.5
             audio.play()
