@@ -40,7 +40,7 @@ export const showResult = proxy({
 })
 
 export const correctAnswer = () =>{
-  section.quiz.score += 20 - timer.value/3
+  score.value += 20 - timer.value/3
   alternativas.corretas += 1
 }
 
