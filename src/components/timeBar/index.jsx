@@ -1,6 +1,6 @@
 import ProgressBar from "@ramonak/react-progress-bar";
 import { useSnapshot } from "valtio";
-import { question, section, timer, resetAndNext } from "../../proxyState/index.js";
+import { question, section, timer } from "../../proxyState/index.js";
 import { useEffect } from "react";
 import { MdWatchLater } from "react-icons/md";
 

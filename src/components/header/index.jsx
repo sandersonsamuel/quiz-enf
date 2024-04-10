@@ -9,6 +9,8 @@ export const Header = () =>{
 
     const sectionCurrent = snapSection.sections[snapSection.current]
 
+    console.log(score.value)
+
     return (
         <>
             <div className={'w-full mt-5 text-white'}>
@@ -20,8 +22,9 @@ export const Header = () =>{
                     </p>
 
                     <p className={'font-bold text-xl'}>
-                        Pontuação: {snapScore.value.toFixed(2) + sectionCurrent.nome}
+                        Pontuação: {sectionCurrent.nome && snapScore.value.toFixed(2)}
                     </p>
+
                 </div>
 
                 <TimeBar/>
