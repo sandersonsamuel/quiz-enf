@@ -4,7 +4,7 @@ const Button = ({children, disabled, className, onClick, color}) => {
 
   const setCor = (cor) =>{
     if (cor == 'roxo'){
-      return 'bg-roxo-100 border-roxo-100'
+      return 'bg-roxo-100 border-roxo-200'
     }
 
     if (cor == 'verde'){
