@@ -1,11 +1,14 @@
 import {TimeBar} from "../timeBar/index.jsx";
-import {score, section} from "../../proxyState/index.js";
+import {section} from "../../proxyState/index.js";
 import {useSnapshot} from "valtio";
+import {useRecoilState} from "recoil";
+import {scoreState} from "../../proxyState/index.js";
 
 export const Header = () =>{
 
     const snapSection = useSnapshot(section)
-    const snapScore = useSnapshot(score)
+
+    const [score, setScore] = useRecoilState(scoreState)
 
     return (
         <>
@@ -18,8 +21,9 @@ export const Header = () =>{
                     </p>
 
                     <p className={'font-bold text-xl'}>
-                        Pontuação: {snapScore.value.toFixed(2)}
+                        Pontuação: {score.toFixed(2)}
                     </p>
+
                 </div>
 
                 <TimeBar/>

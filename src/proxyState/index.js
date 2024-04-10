@@ -1,6 +1,6 @@
 import { proxy } from "valtio";
 import Json from '../questoes/data.json'
-import correctSound from "../assets/soundEffects/Correct.wav";
+import {atom} from "recoil";
 
 export const userName = proxy({
   value: ''
@@ -26,6 +26,11 @@ export const score = proxy({
   value: 0
 })
 
+export const scoreState = atom({
+  key: 'scoreState',
+  default: 0
+})
+
 export const alternativas = proxy({
   corretas: 0,
   total: 33
@@ -34,13 +39,6 @@ export const alternativas = proxy({
 export const showResult = proxy({
   value: false,
 })
-
-export const correctAnswer = () =>{
-
-  score.value += 20 - timer.value/3
-  alternativas.corretas += 1
-
-}
 
 export const resetVariables = () =>{
   question.current = 0
