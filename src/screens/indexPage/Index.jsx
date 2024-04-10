@@ -23,7 +23,7 @@ const Index = () => {
   }
 
   const iniciarQuiz = () =>{
-    if (name.length > 3){
+    if (name.length >= 3){
       userName.value = name
     }
     navigate('/quiz')

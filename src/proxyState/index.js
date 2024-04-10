@@ -19,7 +19,7 @@ export const question = proxy({
 export const timer = proxy({
   value: 0,
   stop: false,
-  maxValue: 20
+  maxValue: 15
 })
 
 export const score = proxy({
