@@ -4,8 +4,10 @@ import {useSnapshot} from "valtio";
 
 export const Header = () =>{
 
-    const snapSection = useSnapshot(section)
-    const snapScore = useSnapshot(score)
+    const { sections, current: currentSectionIndex } = useSnapshot(section);
+    const { value: scoreValue } = useSnapshot(score);
+
+    const currentSection = sections[currentSectionIndex];
 
     return (
         <>
@@ -14,11 +16,11 @@ export const Header = () =>{
                 <div className={'flex flex-col items-center justify-evenly gap-2'}>
 
                     <p className={'text-4xl font-bold text-center'}>
-                        {snapSection.sections[snapSection.current].nome}
+                        {currentSection.nome}
                     </p>
 
                     <p className={'font-bold text-xl'}>
-                        Pontuação: {snapScore.value.toFixed(2)}
+                        Pontuação: {scoreValue.toFixed(2)}
                     </p>
                 </div>
 
