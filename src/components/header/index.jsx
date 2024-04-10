@@ -15,10 +15,6 @@ export const Header = () =>{
 
                 <div className={'flex flex-col items-center justify-evenly gap-2'}>
 
-                    <p className={'text-4xl font-bold text-center'}>
-                        {sectionCurrent.nome}
-                    </p>
-
                     <p className={'font-bold text-xl'}>
                         Pontuação: {score.value.toFixed(2)}
                     </p>

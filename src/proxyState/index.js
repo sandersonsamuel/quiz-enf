@@ -67,21 +67,19 @@ export const finishQuiz = () =>{
 
 export const resetAndNext = () => {
   if (question.currentTotal < alternativas.total - 1) {
-    const currentSection = section.sections[section.current];
-    const isLastQuestionInSection = question.current === currentSection.questoes.length - 1;
+    const currentSection = section.sections[section.current]
+    const isLastQuestionInSection = question.current === currentSection.questoes.length - 1
 
     if (isLastQuestionInSection) {
-      // Avança para a próxima seção se for a última pergunta da seção
-      section.current += 1;
-      question.current = 0;
+      section.current += 1
+      question.current = 0
     } else {
-      // Avança para a próxima pergunta na mesma seção
-      question.current += 1;
+      question.current += 1
     }
 
-    question.currentTotal += 1;
-    timer.value = 0;
+    question.currentTotal += 1
+    timer.value = 0
   } else {
-    finishQuiz();
+    finishQuiz()
   }
 };
