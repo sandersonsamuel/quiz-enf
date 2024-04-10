@@ -8,7 +8,11 @@ export const userName = proxy({
 
 export const section = proxy({
   current: 0,
-  sections: Json.secoes
+  sections: Json.secoes,
+  quiz:{
+    score: 0,
+    currentTotal: 0
+  }
 })
 
 export const question = proxy({
@@ -36,7 +40,7 @@ export const showResult = proxy({
 })
 
 export const correctAnswer = () =>{
-  score.value += 20 - timer.value/3
+  section.quiz.score += 20 - timer.value/3
   alternativas.corretas += 1
 }
 
