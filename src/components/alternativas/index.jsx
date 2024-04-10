@@ -1,6 +1,6 @@
 import Button from "../button/index.jsx";
 import {useSnapshot} from "valtio";
-import {alternativas, correctAnswer, question, score, section, showResult, timer} from "../../proxyState/index.js";
+import {alternativas, correctAnswer, question, section, showResult, timer} from "../../proxyState/index.js";
 import {resetAndNext} from "../../proxyState/index.js";
 import {useEffect, useState} from "react";
 import correctSound from '../../assets/soundEffects/Correct.wav'
