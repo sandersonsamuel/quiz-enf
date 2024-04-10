@@ -43,7 +43,7 @@ export const Alternativas = () =>{
             setShow(false)
             resetAndNext()
             setBtnDisabled(false)
-        }, 2000)
+        }, 0)
     }
 
     useEffect(() => {
