@@ -1,6 +1,6 @@
 import Button from "../button/index.jsx";
 import {useSnapshot} from "valtio";
-import {alternativas, correctAnswer, question, score, section, showResult, timer} from "../../proxyState/index.js";
+import {correctAnswer, question, score, section, showResult, timer} from "../../proxyState/index.js";
 import {resetAndNext} from "../../proxyState/index.js";
 import {useEffect, useState} from "react";
 import correctSound from '../../assets/soundEffects/Correct.wav'
@@ -17,6 +17,8 @@ export const Alternativas = () =>{
     const [btnDisabled, setBtnDisabled] = useState(false);
 
     const altCorreta = snapSection.sections[snapSection.current].questoes[snapQuestion.current].correta
+
+    console.log(score.value)
 
     const showCorrect = (key) =>{
 
@@ -43,7 +45,7 @@ export const Alternativas = () =>{
             setShow(false)
             resetAndNext()
             setBtnDisabled(false)
-        }, 2000)
+        }, 0)
     }
 
     useEffect(() => {
