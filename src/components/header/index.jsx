@@ -20,8 +20,7 @@ export const Header = () =>{
                     </p>
 
                     <p className={'font-bold text-xl'}>
-                        {sectionCurrent.nome}
-                        Pontuação: {snapScore.value.toFixed(2)}
+                        Pontuação: {snapScore.value.toFixed(2) + sectionCurrent.nome}
                     </p>
                 </div>
 
