@@ -32,7 +32,7 @@ const Index = () => {
   const contentModal =
   <>
     <b>Bem-vindo ao Quiz sobre Anamnese e Métodos Propedêuticos!&nbsp;</b>
-    Prepare-se para testar seus conhecimentos sobre a avaliação física e histórico do paciente. Cada pergunta tem um limite de 30 segundos. Os tópicos incluem Inspeção, Palpação, Percussão, Ausculta e Anamnese. No final, sua pontuação revelará seu desempenho. Boa sorte!
+    Prepare-se para testar seus conhecimentos sobre a avaliação física e histórico do paciente. Cada pergunta tem um limite de 15 segundos. Os tópicos incluem Inspeção, Palpação, Percussão, Ausculta e Anamnese. No final, sua pontuação revelará seu desempenho. Boa sorte!
   </>
 
   return (
