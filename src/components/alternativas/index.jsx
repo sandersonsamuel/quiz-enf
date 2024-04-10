@@ -1,6 +1,6 @@
 import Button from "../button/index.jsx";
 import {useSnapshot} from "valtio";
-import {alternativas, question, score, section, showResult, timer} from "../../proxyState/index.js";
+import {alternativas, correctAnswer, question, score, section, showResult, timer} from "../../proxyState/index.js";
 import {resetAndNext} from "../../proxyState/index.js";
 import {useEffect, useState} from "react";
 import correctSound from '../../assets/soundEffects/Correct.wav'
@@ -23,8 +23,7 @@ export const Alternativas = () =>{
         setBtnDisabled(true)
 
         if (key === altCorreta){
-            score.value += 1
-            alternativas.corretas += 1
+            correctAnswer()
             let audio = new Audio(correctSound)
             audio.volume = 0.5
             audio.play()

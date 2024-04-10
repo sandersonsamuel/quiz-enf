@@ -35,6 +35,11 @@ export const showResult = proxy({
   value: false,
 })
 
+export const correctAnswer = () =>{
+  score.value += 20 - timer.value/3
+  alternativas.corretas += 1
+}
+
 export const resetVariables = () =>{
   question.current = 0
   question.currentTotal = 0
